@@ -18,7 +18,7 @@ The following repository consists of experiment scripts to emulate mptcp in the 
     ```
 - Install [mptcpd](https://github.com/intel/mptcpd)  for userspace path management
 
-### Step1 - 1 (Compiling the MPTCP Linux Kernel):
+### Compiling the MPTCP Linux Kernel:
 - The MPTCP out-of-tree implementation is present in the Linux kernel version 4.19.2.34.
   So for performing the experiment we first have to compile and install the MPTCP
   Linux kernel on the UBuntu 16.04 machine. Compiling the Linux kernel refers to the
@@ -27,7 +27,7 @@ The following repository consists of experiment scripts to emulate mptcp in the 
    ```bash
    follow these steps https://github.com/poonam-cclub/Linux-Kernel-Compilation .
     ```
-### Experiment - 2 (Creating the topology using Linux Network Namespaces):
+### Creating the topology using Linux Network Namespaces:
 - **Step-1:** We configure the different congestion control algorithm and path manager as full mesh using the following commands shown.
    ```bash
    
