@@ -3,14 +3,9 @@
 
 The following repository consists of experiment scripts to emulate mptcp in the linux network namespaces. It makes use of the out-of-tree version mptcp implementaion in the linux kernel.
 
-### Topology (3Node(2).sh):
 
- Topology
-  _______   50mbit, 5ms     _______                _______
- |       |-----------------|       |              |       |
- |  h1   |                 |  h2   |--------------|  h3   |
- |_______|-----------------|_______|              |_______|
-             50mbit, 10ms             10mbit, 2ms       
+
+  
 
 
 
@@ -29,8 +24,9 @@ The following repository consists of experiment scripts to emulate mptcp in the 
   Linux kernel on the UBuntu 16.04 machine. Compiling the Linux kernel refers to the
   process of building the kernel source code into a binary executable that can be loaded
   into memory and executed by the computer’s hardware.
+   ```bash
+   follow these steps https://github.com/poonam-cclub/Linux-Kernel-Compilation .
     ```
-- follow these steps https://github.com/poonam-cclub/Linux-Kernel-Compilation .
 ### Experiment - 2 (Creating the topology using Linux Network Namespaces):
 - **Step-1:** We configure the different congestion control algorithm and path manager as full mesh using the following commands shown.
    ```bash
