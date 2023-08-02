@@ -28,14 +28,14 @@ The following repository consists of experiment scripts to emulate mptcp in the 
    follow these steps https://github.com/poonam-cclub/Linux-Kernel-Compilation .
     ```
 ### Creating the topology using Linux Network Namespaces:
-- **Step-1:** We configure the different congestion control algorithm and path manager as full mesh using the following commands shown.
+- **Step-1:** We configure the different congestion control algorithm and path manager as full mesh using the following commands shown.
    ```bash
    
   sysctl net . mptcp . mptcp_scheduler=congestion control algorithm name
   sysctl net . mptcp . mptcp_path_manager=fullmesh
    
    ```
-- **Step-2:** On running the iperf for 20 seconds we obtained the output
+- **Step-2:** On running the iperf for 20 seconds we obtained the output.
 - **Step-3:**  shows the result of different types of Congestion Control Algorithms and
    its average throughput. LIA, which is the standard congestion control algorithm of
    MPTCP, provides poor throughput when it compares with CUBIC algorithm. OLIA
