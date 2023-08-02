@@ -25,7 +25,7 @@ The following repository consists of experiment scripts to emulate mptcp in the 
   process of building the kernel source code into a binary executable that can be loaded
   into memory and executed by the computer’s hardware.follow these steps
    ```bash
-   [mptcpd](https://github.com/intel/mptcpd)
+   https://github.com/poonam-cclub/Linux-Kernel-Compilation
     ```
 ### Creating the topology using Linux Network Namespaces:
 - **Step-1:** We configure the different congestion control algorithm and path manager as full mesh using the following commands shown.
