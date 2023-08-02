@@ -16,16 +16,16 @@ The following repository consists of experiment scripts to emulate mptcp in the 
     ```bash
     sudo apt install build-essential git iperf iperf3
     ```
-- Install [mptcpd](https://github.com/intel/mptcpd)  for userspace path management
+
 
 ### Compiling the MPTCP Linux Kernel:
 - The MPTCP out-of-tree implementation is present in the Linux kernel version 4.19.2.34.
   So for performing the experiment we first have to compile and install the MPTCP
   Linux kernel on the UBuntu 16.04 machine. Compiling the Linux kernel refers to the
   process of building the kernel source code into a binary executable that can be loaded
-  into memory and executed by the computer’s hardware.
+  into memory and executed by the computer’s hardware.follow these steps
    ```bash
-   follow these steps https://github.com/poonam-cclub/Linux-Kernel-Compilation .
+   [mptcpd](https://github.com/intel/mptcpd)
     ```
 ### Creating the topology using Linux Network Namespaces:
 - **Step-1:** We configure the different congestion control algorithm and path manager as full mesh using the following commands shown.
